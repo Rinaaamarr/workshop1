@@ -1,0 +1,156 @@
+body {
+  background-color:rgb(250, 247, 241);
+}
+.shape {
+  width: 130px;
+  height: 40px;
+  background: #272c53;
+  margin-top: 66vw;
+  margin-left: 21vw;
+  transform: perspective(100px) rotateX(45deg);
+  rotate: -50deg;
+  position: absolute;
+  animation: move 2.5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.line {
+  scale: 0.3;
+  margin-top: -50vw;
+  margin-left: auto;
+  rotate: -50deg;
+  position: relative;
+  animation: leftrot 4s linear infinite;
+}
+
+@keyframes leftrot {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.circle1 {
+  width: 90px;
+  height: 90px;
+  background-color: #d7a525;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -57.4vw;
+  margin-left: 34.94vw;
+  animation: jump 3s linear infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 17.7vw;
+    scale: 0.5;
+  }
+}
+
+.square1 {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  margin-top: -65.4vw;
+  margin-left: 30vw;
+  position: absolute;
+  rotate: -5deg;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.rect1 {
+  width: 20px;
+  height: 500px;
+  background-color: #a3aead;
+  position: absolute;
+  margin-left: 50vw;
+  margin-top: -67vw;
+  z-index: -1;
+  animation: rotright 4s linear infinite;
+}
+
+@keyframes rotright {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+}
+
+.rect2 {
+  width: 30px;
+  height: 300px;
+  background-color: #272c53;
+  position: absolute;
+  margin-left: 48vw;
+  margin-top: -60vw;
+  z-index: -1;
+  animation: rotleft 4s linear infinite;
+}
+@keyframes rotleft {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+}
